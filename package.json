@@ -16,16 +16,23 @@
   ],
   "dependencies": {
     "@sanity/vision": "^6.16.0",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
+    "next": "^16.3.7",
+    "next-sanity": "^13.3.4",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
     "sanity": "^6.16.0",
     "styled-components": "^6.1.18"
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "^7",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "26.6.3",
     "@types/react": "^19.2.14",
+    "autoprefixer": "^10.6.1",
     "eslint": "^10.8.1",
+    "postcss": "^8.5.28",
     "prettier": "^3.5",
+    "tailwindcss": "^4.3.3",
     "typescript": "^5.8"
   },
   "prettier": {
