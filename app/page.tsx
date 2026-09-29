@@ -1,11 +1,11 @@
-import { client } from '@/lib/client'
+import { client } from '../lib/client'
 import {
   SUSPECTS_QUERY,
   EVIDENCE_QUERY,
   CONTRADICTIONS_QUERY,
   TIMELINE_QUERY,
-} from '@/lib/queries'
-import InteractiveBoard from '@/components/InteractiveBoard'
+} from '../lib/queries'
+import InteractiveBoard from '../components/InteractiveBoard'
 
 export const revalidate = 0
 
