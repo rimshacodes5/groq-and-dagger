@@ -1,17 +1,14 @@
-import {defineConfig} from 'sanity'
-import {structureTool} from 'sanity/structure'
-import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemaTypes'
+import { defineConfig } from 'sanity'
+import { structureTool } from 'sanity/structure'
+import { schemaTypes } from './schemaTypes' // or your schema folder path
 
 export default defineConfig({
   name: 'default',
-  title: 'GROQ & Dagger',
-
-  projectId: 'ur1wyqmd',
-  dataset: 'production',
-
-  plugins: [structureTool(), visionTool()],
-
+  title: 'GROQ & Dagger Studio',
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'YOUR_PROJECT_ID',
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
+  basePath: '/studio',
+  plugins: [structureTool()],
   schema: {
     types: schemaTypes,
   },
